@@ -1,2 +1,2 @@
 # AndroidJar
-Gradle plugin which will find your android.jar 
+Gradle plugin which will find your android.jar
