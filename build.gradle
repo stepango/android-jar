@@ -1,0 +1,35 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.3.31"
+    id "java-gradle-plugin"
+    id "org.gradle.kotlin.kotlin-dsl" version "1.2.8"
+    id "com.gradle.plugin-publish" version "0.10.1"
+}
+
+group = "com.stepango.androidjar"
+version = "0.1"
+
+gradlePlugin {
+    plugins {
+        aar2jar {
+            id = "com.stepango.androidjar"
+            displayName = "AndroidJar"
+            description = "Find your android.jar dependency, easily."
+            implementationClass = "com.stepango.androidjar.AndroidJar"
+        }
+    }
+}
+
+dependencies {
+    compileOnly gradleApi()
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+
+repositories {
+    jcenter()
+}
+
+pluginBundle {
+    website = "https://github.com/stepango/android-jar"
+    vcsUrl = "https://github.com/stepango/android-jar.git"
+    tags = ["gradle", "kotlin", "android", "plugin", "jar", "android.jar"]
+}
