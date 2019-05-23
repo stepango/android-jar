@@ -17,3 +17,5 @@ dependencies {
 	compileOnly androidJar
 }
 ```
+
+[Presentation Mobuis 2019 RUS](https://drive.google.com/open?id=1r68gebquy6nSALzrCyP3kpK14tFL51pd)
